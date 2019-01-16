@@ -1,0 +1,20 @@
+<idea-plugin>
+    <id>org.jetbrains.execsound</id>
+    <name>Execution-sounds</name>
+    <version>0.0.4</version>
+    <vendor email="lembolovo9@yandex.ru" url="www.vk.com/tomas0808">Sergey</vendor>
+    <description>simple plugin for playing sound for exit code 0 after run
+    and playing other sound with no 0 code
+    </description>
+    <change-notes>third version, changed since-build in idea-version</change-notes>
+
+    <depends>com.intellij.modules.lang</depends>
+    
+    <idea-version since-build="172"></idea-version>
+
+    <project-components>
+        <component>
+            <implementation-class>ExecutionSound</implementation-class>
+        </component>
+    </project-components>
+</idea-plugin>
