@@ -11,6 +11,10 @@
     <depends>com.intellij.modules.lang</depends>
     
     <idea-version since-build="172"></idea-version>
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationService serviceImplementation="PluginSettings"/>
+        <applicationConfigurable instance="SettingsConfigurable"/>
+    </extensions>
 
     <project-components>
         <component>
